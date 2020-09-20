@@ -1,11 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
-const Home = () => {
+const aboutMe = () => {
   return (
     <Layout>
-      <Head title="Home" /> Hello World!
+      <Head title="About Me" />
+      Hello its me!
     </Layout>
   )
 }
-export default Home
+export default aboutMe
