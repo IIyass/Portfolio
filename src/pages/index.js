@@ -8,6 +8,9 @@ import AboutMeUndraw from "../images/undraw_startup_life_2du2.png"
 import BlogUndraw from "../images/undraw_task_31wc.png"
 import ContactMeUndraw from "../images/undraw_delivery_address_03n0.png"
 import MyEnhancedForm from "../components/ContactMeForm"
+
+import Typewriter from "typewriter-effect"
+
 const Home = () => {
   const IntroductionContent = (
     <div>
@@ -18,13 +21,24 @@ const Home = () => {
   const ProjectContent = <p>hello</p>
   const AboutMeContent = <p>world</p>
   const BlogContent = <p>Psps</p>
+  const onSubmit = x => {
+    console.log(x)
+  }
 
   return (
     <Layout>
       <Head title="Home" />
       <SharedComponent
         content={IntroductionContent}
-        title="Hi There!"
+        title={
+          <Typewriter
+            options={{
+              strings: ["Hello World"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        }
         illustration={CodingUndraw}
         order={0}
       />

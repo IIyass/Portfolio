@@ -17,7 +17,13 @@ const Header = () => {
   return (
     <header>
       <Style.HeaderContainer>
-        <h1>{data.site.siteMetadata.author}</h1>
+        <div className="logo">
+          <div className="X">
+            <div className="I1" />
+            <div className="I2" />
+          </div>
+          <h1 className="YASS">YASS</h1>
+        </div>
         <nav>
           <ul>
             <li>

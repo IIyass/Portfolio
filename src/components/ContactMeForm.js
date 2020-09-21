@@ -4,17 +4,11 @@ import * as Yup from "yup"
 
 const ContactMeForm = ({
   values,
-
   errors,
-
   touched,
-
   handleChange,
-
   handleBlur,
-
   handleSubmit,
-
   isSubmitting,
 }) => {
   const validation = field => {
@@ -24,6 +18,9 @@ const ContactMeForm = ({
   const feedback = field => {
     if (errors[field] && touched[field]) return errors[field]
     return null
+  }
+  {
+    console.log(values.fullname)
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -41,13 +38,20 @@ const ContactMeForm = ({
 
       <input
         type="text"
+        name="email"
+        onChange={handleChange}
+        onBlur={handleBlur}
+        value={values.email}
+      />
+      <textarea
+        type="text"
         name="object"
         onChange={handleChange}
         onBlur={handleBlur}
         value={values.object}
       />
 
-      <button type="submit" onClick={handleSubmit} disabled={isSubmitting}>
+      <button type="submit" disabled={isSubmitting}>
         Submit
       </button>
     </form>
@@ -70,11 +74,10 @@ const MyEnhancedForm = withFormik({
   handleSubmit: (values, { props, setSubmitting }) => {
     console.log({
       fullname: values.fullname,
-
+      email: values.email,
       object: values.object,
     })
-
-    setSubmitting(false)
+    // setSubmitting(false)
   },
   displayName: "ContactMeForm",
 })(ContactMeForm)
