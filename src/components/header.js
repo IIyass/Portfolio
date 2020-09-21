@@ -17,13 +17,16 @@ const Header = () => {
   return (
     <header>
       <Style.HeaderContainer>
-        <div className="logo">
-          <div className="X">
-            <div className="I1" />
-            <div className="I2" />
+        <Link to="/">
+          <div className="logo">
+            <div className="X">
+              <div className="I1" />
+              <div className="I2" />
+            </div>
+            <p className="YASS">YASS</p>
+            <div className="I3" />
           </div>
-          <h1 className="YASS">YASS</h1>
-        </div>
+        </Link>
         <nav>
           <ul>
             <li>

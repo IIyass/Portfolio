@@ -11,11 +11,11 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  h1 {
-    margin: 0;
-    padding: 0;
-    color: #f9a826;
+
+  a {
+    text-decoration: none;
   }
+
   nav {
     width: 75%;
   }
@@ -37,21 +37,26 @@ export const HeaderContainer = styled.div`
   }
   transition-duration: 2s;
   .logo {
-    width: 150px;
+    width: 130px;
     display: flex;
-    justify-content: end;
     font-family: "Philosopher", sans-serif;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
   }
   .YASS {
     transform: translateX(15px);
     transition-duration: 1s;
     width: 70%;
+    margin: 0;
+    font-size: 40px;
+    color: #7b341e;
   }
   .X {
     width: 30%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
   }
   .I1 {
     width: 4px;
@@ -67,8 +72,18 @@ export const HeaderContainer = styled.div`
     transform: rotate(-45deg);
     background-color: #f9a826;
     border-radius: 10px;
-
     transition-duration: 1s;
+  }
+  .I3 {
+    width: 65px;
+    height: 4px;
+    background-color: #f9a826;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(10px);
   }
 
   .logo:hover {
@@ -83,7 +98,13 @@ export const HeaderContainer = styled.div`
 
     .YASS {
       transition-duration: 1s;
-      transform: translateX(2px);
+      transform: translate(-13px, -2px);
+      font-size: 25px;
+    }
+    .I3 {
+      transform: translate(-45px, -2px);
+      transition-duration: 1s;
+      opacity: 1;
     }
   }
 `
@@ -106,6 +127,8 @@ export const ContentContainer = styled.div`
     flex-direction: column;
   }
   .Typewriter__wrapper {
-    color: #f9a826;
+    color: white;
+    background-color: black;
+    font-family: monospace;
   }
 `
