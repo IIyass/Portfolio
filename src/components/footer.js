@@ -13,7 +13,8 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        My portfoli footer created by {data.site.siteMetadata.author} , c 2020{" "}
+        © All rights are reserved | 2020 | Made with 💖 by{" "}
+        {data.site.siteMetadata.author}
       </p>
     </footer>
   )

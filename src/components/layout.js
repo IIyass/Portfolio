@@ -1,14 +1,14 @@
 import React from "react"
 import Footer from "./footer"
 import Header from "./header"
-import { Container } from "../styles/container"
+import * as Style from "../styles"
 const Layout = props => {
   return (
-    <div>
+    <Style.Wrapper>
       <Header />
-      <Container>{props.children}</Container>
+      {props.children}
       <Footer />
-    </div>
+    </Style.Wrapper>
   )
 }
 export default Layout
