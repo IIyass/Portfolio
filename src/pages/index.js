@@ -8,18 +8,23 @@ import AboutMeUndraw from "../images/undraw_startup_life_2du2.png"
 import BlogUndraw from "../images/undraw_task_31wc.png"
 import ContactMeUndraw from "../images/undraw_delivery_address_03n0.png"
 import MyEnhancedForm from "../components/ContactMeForm"
-
+import Button from "../components/UI/button"
+import Icons from "../components/icons"
 import Typewriter from "typewriter-effect"
+import { AboutMe, ProjectContent } from "../Utils/Information"
 
 const Home = () => {
   const IntroductionContent = (
     <div>
-      <p>I’m ILyass and I’m a Software engineer!</p>
-      <button>Hire Me</button>
+      <p>
+        I'm Ilyass <span id="name">BELKASMI</span>, I'm a Software Engineer ||
+        MERN stack Developer !
+      </p>
+      <Icons />
+      <Button>Hire Me</Button>
     </div>
   )
-  const ProjectContent = <p>hello</p>
-  const AboutMeContent = <p>world</p>
+  const AboutMeContent = AboutMe
   const BlogContent = <p>Psps</p>
   const onSubmit = x => {
     console.log(x)

@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-fontawesome-css",
     {
       resolve: "gatsby-source-contentful",
       options: {
@@ -43,6 +44,18 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "GitHub",
+        fieldName: "github",
+        url: "https://api.github.com/graphql",
+        headers: {
+          Authorization: `bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
+        },
+        fetchOptions: {},
       },
     },
   ],

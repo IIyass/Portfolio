@@ -1,6 +1,9 @@
 import React from "react"
 import { withFormik } from "formik"
 import * as Yup from "yup"
+import Input from "../components/UI/input"
+import Textarea from "../components/UI/textarea"
+import Button from "../components/UI/button"
 
 const ContactMeForm = ({
   values,
@@ -19,12 +22,10 @@ const ContactMeForm = ({
     if (errors[field] && touched[field]) return errors[field]
     return null
   }
-  {
-    console.log(values.fullname)
-  }
+
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <Input
         validation={validation("fullname")}
         label="Fullname"
         type="text"
@@ -32,28 +33,34 @@ const ContactMeForm = ({
         onBlur={handleBlur}
         value={values.fullname}
         name="fullname"
-        placeholder="Fullname"
+        placeholder="Jon Snow"
         feedback={feedback("fullname")}
       />
 
-      <input
+      <Input
         type="text"
+        placeholder="Example@Example.com"
         name="email"
+        label="Email"
         onChange={handleChange}
         onBlur={handleBlur}
         value={values.email}
+        feedback={feedback("email")}
       />
-      <textarea
+      <Textarea
         type="text"
         name="object"
+        label="Object"
         onChange={handleChange}
         onBlur={handleBlur}
         value={values.object}
+        rows="5"
+        feedback={feedback("object")}
       />
 
-      <button type="submit" disabled={isSubmitting}>
+      <Button type="submit" disabled={isSubmitting}>
         Submit
-      </button>
+      </Button>
     </form>
   )
 }
