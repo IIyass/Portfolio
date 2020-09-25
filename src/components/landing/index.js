@@ -4,7 +4,7 @@ import { Hero } from "./Hero"
 import { Project } from "./Projects"
 import { AboutMe } from "./AboutMe"
 import { Blogs } from "./Blogs"
-import Footer from "../Footer.js"
+import Footer from "../Footer"
 import * as Style from "./styles"
 const Landing = () => {
   return (

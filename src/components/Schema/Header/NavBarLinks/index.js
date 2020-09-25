@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import * as Style from "./styles"
 

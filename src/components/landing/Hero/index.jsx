@@ -3,9 +3,9 @@ import Header from "../../Schema/Header/NavBar"
 import { Container } from "../../common"
 import { Button } from "../../UI/button"
 import Typewriter from "typewriter-effect"
-import CodingUndraw from "../../../assests/Thumbnail/undraw_coding_6mjf.png"
+import CodingUndraw from "../../../assests/illustrations/Intro.svg"
 import Icons from "../../Utils/Icons"
-import { Wrapper, IntroWrapper, Details, Thumbnail } from "./styles"
+import { IntroWrapper, Details, Thumbnail } from "./styles"
 
 export const Hero = () => {
   return (

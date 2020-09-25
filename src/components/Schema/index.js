@@ -1,14 +1,10 @@
 import React from "react"
 import NavBar from "./Header/NavBar"
 import NavBarLinks from "./Header/NavBarLinks"
-import {Container} from '../common'
+import { Container } from "../common"
 
 const Header = () => {
-<Wrapper as={Container}>
-<NavBar
-
-</Wrapper>
-
+  return <>"hello"</>
 }
 
 export default Header

@@ -2,7 +2,7 @@ import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Container } from "../../common"
 import * as Style from "./styles"
-import BlogUndraw from "../../../assests/Thumbnail/undraw_task_31wc.png"
+import BlogUndraw from "../../../assests/illustrations/Blog.svg"
 
 export const Blogs = () => {
   return (

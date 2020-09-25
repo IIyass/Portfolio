@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "../../common"
 import * as Style from "./styles"
-import ActivityUndraw from "../../../assests/Thumbnail/undraw_developer_activity_bv83.png"
+import ActivityUndraw from "../../../assests/illustrations/Project.svg"
 
 export const Project = () => {
   return (

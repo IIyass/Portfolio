@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import image from "../../../assests/Thumbnail/undraw_hacker_mind_6y85.png"
+import image from "../../../assests/illustrations/hero.svg"
 export const ProjectCard = styled.div`
   perspective: 150rem;
   transition: all 1s ease;
