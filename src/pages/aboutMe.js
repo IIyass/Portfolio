@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import Head from "../components/head"
-import ProjectCard from "../components/ProjectCard"
+import SEO from "../components/SEO"
+import ProjectCard from "../components/Utils/ProjectCard"
 const aboutMe = () => {
   return (
     <Layout>
-      <Head title="About Me" />
+      <SEO title="About Me" />
       <ProjectCard />
       // SWR MODEL PAGINATION EMAIL ... // CSS VARIABLE // PROJECT STRUCTURE
     </Layout>

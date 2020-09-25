@@ -1,12 +1,11 @@
-import React from "react"
-import * as Style from "../../styles"
+import styled from "styled-components"
 
-const Button = props => {
-  return (
-    <Style.Button>
-      <button {...props}></button>
-    </Style.Button>
-  )
-}
-
-export default Button
+export const Button = styled.button`
+  background-color: #f9a826;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  font-family: Ubuntu;
+`

@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import Head from "../components/head"
-import ProjectCard from "../components/ProjectCard"
+
+import ProjectCard from "../components/Utils/ProjectCard"
 import * as Style from "../styles"
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -28,7 +28,6 @@ const Blog = () => {
   `)
   return (
     <Layout>
-      <Head title="Project" />
       <h1>Projects</h1>
       <Style.ProjectLayout>
         {data.github.viewer.repositories.edges.map(project => {

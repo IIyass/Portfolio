@@ -1,6 +1,6 @@
 import React from "react"
-import * as Style from "../styles"
-import Button from "../components/UI/button"
+import * as Style from "./styles"
+import Button from "../../UI/button"
 
 const ProjectCard = ({
   name,
@@ -8,10 +8,8 @@ const ProjectCard = ({
   description,
   topic = ["react", "angular", "javascript"],
 }) => {
-  
   return (
     <Style.ProjectCard>
-      {console.log(name)}
       <div className="Card">
         <div className="CardFront">
           <div className="CardImage"></div>

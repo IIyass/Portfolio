@@ -6,7 +6,7 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import * as Style from "../styles"
+import * as Style from "./styles"
 
 const Icons = () => {
   return (

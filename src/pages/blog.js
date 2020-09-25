@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import Head from "../components/head"
+import SEO from "../components/SEO"
 const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -18,7 +18,7 @@ const Blog = () => {
   `)
   return (
     <Layout>
-      <Head title="Project" />
+      <SEO title="Project" />
       <h1>Projects</h1>
       {console.log(data)}
       <ol>
