@@ -4,26 +4,16 @@ import { Hero } from "./Hero"
 import { Project } from "./Projects"
 import { AboutMe } from "./AboutMe"
 import { Blogs } from "./Blogs"
-import Footer from "../Footer"
 import * as Style from "./styles"
-const Landing = () => {
+const Landing = ({ path }) => {
   return (
-    <>
-      <Style.Wrapper>
-        <Hero />
-        <AboutMe />
-        <Project />
-        <Blogs />
-        <ContactMe />
-      </Style.Wrapper>
-      <Footer />
-    </>
+    <Style.Wrapper>
+      <Hero path={path} />
+      <AboutMe />
+      <Project />
+      <Blogs />
+      <ContactMe />
+    </Style.Wrapper>
   )
 }
 export default Landing
-// <SharedComponent
-// content={ProjectContent}
-// title="Projects"
-// illustration={ActivityUndraw}
-// order={1}
-// />

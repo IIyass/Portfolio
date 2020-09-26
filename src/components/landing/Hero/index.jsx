@@ -1,16 +1,15 @@
 import React from "react"
-import Header from "../../Schema/Header/NavBar"
 import { Container } from "../../common"
 import { Button } from "../../UI/button"
 import Typewriter from "typewriter-effect"
 import CodingUndraw from "../../../assests/illustrations/Intro.svg"
 import Icons from "../../Utils/Icons"
 import { IntroWrapper, Details, Thumbnail } from "./styles"
-
-export const Hero = () => {
+import Header from "../../Schema/Header/NavBar"
+export const Hero = ({ path }) => {
   return (
     <>
-      <Header />
+      <Header path={path} />
       <IntroWrapper as={Container}>
         <Details>
           <Typewriter

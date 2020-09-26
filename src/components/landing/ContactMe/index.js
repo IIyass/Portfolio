@@ -7,6 +7,7 @@ import * as Style from "./styles"
 export const ContactMe = () => (
   <Style.ContactWrapper id="contactMe" as={Container}>
     <Style.Details>
+      <h1>Contact Me</h1>
       <ContactMeForm />
     </Style.Details>
     <Style.Thumbnail>

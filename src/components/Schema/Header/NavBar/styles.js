@@ -12,6 +12,7 @@ export const Wrapper = styled.header`
 
 export const Brand = styled.div`
   .logo {
+    height: 50px;
     width: 130px;
     display: flex;
     font-family: "Philosopher", sans-serif;

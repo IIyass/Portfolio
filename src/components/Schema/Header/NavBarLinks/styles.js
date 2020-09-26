@@ -1,13 +1,19 @@
 import styled from "styled-components"
-export const Wrapper = styled.header`
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    li {
-      padding-right: 2rem;
+export const Wrapper = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 1rem 1rem;
+    :nth-child(${({ selected }) => selected}) {
+      background-color: #f9a826;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      a {
+        color: #fff;
+      }
     }
   }
 `

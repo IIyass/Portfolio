@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const IntroWrapper = styled.div`
   display: flex;
   align-items: center;
+  padding: 4rem 0;
   justify-content: space-between;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -11,10 +12,6 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
   p {
     color: #707070;
     margin-bottom: 1rem;
@@ -25,7 +22,6 @@ export const Details = styled.div`
     color: #41ff00;
     font-size: 30pt;
     background-color: black;
-    font-family: "VT323", monospace;
   }
 `
 

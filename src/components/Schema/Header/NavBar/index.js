@@ -4,7 +4,7 @@ import NavBarLinks from "../NavBarLinks"
 import { Link } from "gatsby"
 import { Container } from "../../../common"
 
-const NavBar = () => {
+const NavBar = ({ path }) => {
   return (
     <Style.Wrapper as={Container}>
       <Style.Brand as={Link} to="/">
@@ -17,7 +17,7 @@ const NavBar = () => {
           <div className="I3" />
         </div>
       </Style.Brand>
-      <NavBarLinks />
+      <NavBarLinks path={path} />
     </Style.Wrapper>
   )
 }

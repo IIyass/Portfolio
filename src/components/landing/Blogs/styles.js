@@ -20,6 +20,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 26pt;
+    color: #f9a826;
   }
   p {
     margin-bottom: 2.5rem;

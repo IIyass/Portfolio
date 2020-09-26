@@ -12,7 +12,10 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
+    "babel-plugin-styled-components",
     "gatsby-plugin-fontawesome-css",
+
     {
       resolve: "gatsby-source-contentful",
       options: {
@@ -20,7 +23,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    "gatsby-plugin-styled-components",
 
     {
       resolve: `gatsby-source-filesystem`,
