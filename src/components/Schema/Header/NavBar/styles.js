@@ -35,7 +35,7 @@ export const Brand = styled.div`
     justify-content: center;
   }
   .I1,
-  I2 {
+  .I2 {
     width: 4px;
     height: 40px;
     transform: rotate(45deg);
@@ -77,7 +77,7 @@ export const Brand = styled.div`
       font-size: 25px;
     }
     .I3 {
-      transform: translate(-45px, -2px);
+      transform: translate(-45px, -12px);
       transition-duration: 1s;
       opacity: 1;
     }

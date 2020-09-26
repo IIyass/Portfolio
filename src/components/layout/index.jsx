@@ -1,7 +1,6 @@
 import React from "react"
 import Footer from "../Schema/Footer"
 import { Global } from "./styles"
-import "./fonts.css"
 
 const Layout = ({ children }) => {
   return (

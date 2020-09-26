@@ -19,6 +19,7 @@ export const Details = styled.div`
   }
 
   .Typewriter__wrapper {
+    font-family: VT323;
     color: #41ff00;
     font-size: 30pt;
     background-color: black;

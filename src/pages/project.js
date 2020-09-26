@@ -2,9 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import ProjectCard from "../components/Utils/ProjectCard"
-import * as Style from "../styles"
-
 const Blog = () => {
   return <>Hello</>
 }

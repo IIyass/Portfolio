@@ -1,6 +1,3 @@
-import React from "react"
-import * as Style from "../../styles"
-
 import styled from "styled-components"
 
 export const Textarea = styled.textarea.attrs(props => ({
