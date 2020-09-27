@@ -73,7 +73,7 @@ export const Brand = styled.div`
 
     .YASS {
       transition-duration: 1s;
-      transform: translate(-13px, -2px);
+      transform: translate(-25px, -2px);
       font-size: 25px;
     }
     .I3 {

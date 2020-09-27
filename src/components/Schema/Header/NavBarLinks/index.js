@@ -30,16 +30,16 @@ const NavBarLinks = ({ path }) => {
         <AnchorLink href="/">Home</AnchorLink>
       </li>
       <li>
-        <AnchorLink href="#blogs">Blog</AnchorLink>
+        <AnchorLink href="#blog">Blog</AnchorLink>
       </li>
       <li>
-        <AnchorLink href="#contactUs">contactMe</AnchorLink>
+        <AnchorLink href="#contactMe">contactMe</AnchorLink>
       </li>
       <li>
         <AnchorLink href="#aboutMe">aboutMe</AnchorLink>
       </li>
       <li>
-        <AnchorLink href="#projects">Projects</AnchorLink>
+        <AnchorLink href="#project">Projects</AnchorLink>
       </li>
     </Style.Wrapper>
   )

@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Icons from "../../Utils/Icons"
+import { Container } from "../../common"
 import * as Style from "./styles"
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -14,11 +15,13 @@ const Footer = () => {
   `)
   return (
     <Style.Footer>
-      <p>
-        © All rights are reserved | 2020 | Made with 💖 by{" "}
-        {data.site.siteMetadata.author}
-      </p>
-      <Icons />
+      <Style.FooterContent as={Container}>
+        <p>
+          © All rights are reserved | 2020 | Made with 💖 by{" "}
+          {data.site.siteMetadata.author}
+        </p>
+        <Icons />
+      </Style.FooterContent>
     </Style.Footer>
   )
 }

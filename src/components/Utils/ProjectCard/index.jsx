@@ -9,7 +9,7 @@ const ProjectCard = ({
   topic = ["react", "angular", "javascript"],
 }) => {
   return (
-    <Style.ProjectCard>
+    <Style.Card>
       <div className="Card">
         <div className="CardFront">
           <div className="CardImage"></div>
@@ -30,7 +30,7 @@ const ProjectCard = ({
           </ul>
         </div>
       </div>
-    </Style.ProjectCard>
+    </Style.Card>
   )
 }
 

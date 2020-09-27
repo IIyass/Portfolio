@@ -9,17 +9,6 @@ export const AboutWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 26pt;
-    color: #f9a826;
-  }
-  p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
-    font-weight: normal;
-    line-height: 1.3;
-  }
 `
 
 export const Thumbnail = styled.div`
@@ -27,4 +16,9 @@ export const Thumbnail = styled.div`
   img {
     width: 100%;
   }
+`
+
+export const MoreInfo = styled.div`
+  display: flex;
+  justify-content: space-evenly;
 `

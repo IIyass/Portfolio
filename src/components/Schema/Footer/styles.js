@@ -7,12 +7,17 @@ export const Footer = styled.footer`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: inherit;
+`
+
+export const FooterContent = styled.div`
   position: relative;
+  height: 100%;
   p {
     position: absolute;
     bottom: 0;
   }
-  > div {
+
+  > div:nth-child(2) {
     position: absolute;
     top: 50%;
     right: 5rem;

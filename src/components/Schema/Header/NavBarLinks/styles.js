@@ -6,7 +6,7 @@ export const Wrapper = styled.ul`
   margin: 0;
   padding: 0;
   li {
-    padding: 1rem 1rem;
+    padding: 2rem 1.5rem;
     :nth-child(${({ selected }) => selected}) {
       background-color: #f9a826;
       border-bottom-right-radius: 10px;

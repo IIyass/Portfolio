@@ -40,6 +40,8 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "react-pdf": "^5.0.0",
+    "react-router-dom": "^5.2.0",
     "styled-components": "^4.4.1",
     "styled-jsx": "^3.3.0",
     "typewriter-effect": "^2.13.1",

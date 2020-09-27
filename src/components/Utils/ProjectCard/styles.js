@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import image from "../../../assests/illustrations/hero.svg"
-export const ProjectCard = styled.div`
+export const Card = styled.div`
   perspective: 150rem;
   transition: all 1s ease;
   position: relative;
