@@ -1,11 +1,11 @@
 {
-    "compilerOptions": {
-      "target": "ES6",
-      "module": "commonjs",
-      "baseUrl": "src",
-      "experimentalDecorators": true,
-      "allowSyntheticDefaultImports": true,
-      "jsx": "react"
-    },
-    "include": ["src/**/*"]
-  }
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "baseUrl": "src",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
+  },
+  "include": ["src/**/*", , "NotYetPages/aboutMe.js""NotYetPages/project.js", "NotYetPages/blog.js", "NotYetPages/contactUs.js"]
+}
