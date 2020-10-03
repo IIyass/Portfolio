@@ -9,7 +9,6 @@ import Header from "../../Schema/Header/NavBar"
 export const Hero = ({ path }) => {
   return (
     <>
-      <Header path={path} />
       <IntroWrapper as={Container}>
         <Details>
           <Typewriter

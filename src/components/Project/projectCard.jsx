@@ -1,6 +1,6 @@
 import React from "react"
 import * as Style from "./styles"
-import Button from "../../UI/button"
+import { Button } from "../UI/button"
 
 const ProjectCard = ({
   name,

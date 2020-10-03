@@ -1,11 +1,13 @@
 import React from "react"
 import Footer from "../Schema/Footer"
-import { Global } from "./styles"
+import Header from "../Schema/Header/NavBar"
+import { Global, Wrapper } from "./styles"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Global />
+      <Header />
       {children}
       <Footer />
     </>

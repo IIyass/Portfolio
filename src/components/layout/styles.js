@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components"
+import section1 from "../../assests/illustrations/hero.svg"
+import styled from "styled-components"
 
 export const Global = createGlobalStyle`
   html {

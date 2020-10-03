@@ -4,16 +4,16 @@ import { Hero } from "./Hero"
 import { Project } from "./Projects"
 import { AboutMe } from "./AboutMe"
 import { Blogs } from "./Blogs"
-import * as Style from "./styles"
+import { Wrapper } from "./styles"
 const Landing = ({ path }) => {
   return (
-    <Style.Wrapper>
+    <Wrapper>
       <Hero path={path} />
       <AboutMe />
       <Project />
       <Blogs />
       <ContactMe />
-    </Style.Wrapper>
+    </Wrapper>
   )
 }
 export default Landing
