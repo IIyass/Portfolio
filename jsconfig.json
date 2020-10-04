@@ -7,5 +7,5 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react"
   },
-  "include": ["src/**/*", , "NotYetPages/aboutMe.js""NotYetPages/project.js", "NotYetPages/blog.js", "NotYetPages/contactUs.js"]
+  "include": ["src/**/*",  "NotYetPages/aboutMe.js""NotYetPages/project.js", "NotYetPages/blog.js", "NotYetPages/contactUs.js"]
 }

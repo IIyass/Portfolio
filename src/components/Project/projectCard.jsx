@@ -1,12 +1,14 @@
 import React from "react"
 import * as Style from "./styles"
 import { Button } from "../UI/button"
+import { Link } from "gatsby"
+import { ModalRoutingContext } from "gatsby-plugin-modal-routing"
 
 const ProjectCard = ({
   name,
   url,
   description,
-  topic = ["react", "angular", "javascript"],
+  topic = ["react.js", "node.js", "javascript"],
 }) => {
   return (
     <Style.Card>
@@ -21,7 +23,14 @@ const ProjectCard = ({
         <div className="CardBack">
           <div className="BackButton">
             <Button url={url}>GITHUB REPOSITORY</Button>
-            <Button>LIVE</Button>
+            <Link
+              to="/model"
+              state={{
+                modal: true,
+              }}
+            >
+              Login
+            </Link>
           </div>
           <ul>
             {topic.map(e => {

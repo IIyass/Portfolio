@@ -1,6 +1,24 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle, keyframes } from "styled-components"
 import section1 from "../../assests/illustrations/hero.svg"
 import styled from "styled-components"
+
+const ModalFadeInKeyframes = keyframes`
+  0% {
+    transform: scale3d(0.1, 0.1, 1);
+  }
+
+  55% {
+    transform: scale3d(0.55, 0.55, 1);
+  }
+
+  75% {
+    transform: scale3d(0.75, 0.75, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+`
 
 export const Global = createGlobalStyle`
   html {
@@ -8,6 +26,20 @@ export const Global = createGlobalStyle`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 
+    .ReactModal__Content {
+         position:absolute;
+         left:50%;
+         top:50%;
+         transform:transition(-50%,-50%);
+        background: #000;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 10px;
+        width: 50%;
+        max-width: 800px;
+        animation: ${ModalFadeInKeyframes} 250ms linear;
+        overflow-x: auto;
+        max-height: 90%;
+      }
   }
 
   body{
@@ -38,6 +70,7 @@ export const Global = createGlobalStyle`
       line-height: 1.3;
       color: #707070;
     }
+
   }
  
 `

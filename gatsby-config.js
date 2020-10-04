@@ -15,6 +15,7 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "babel-plugin-styled-components",
     "gatsby-plugin-fontawesome-css",
+    "gatsby-plugin-modal-routing",
 
     {
       resolve: "gatsby-source-contentful",

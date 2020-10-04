@@ -1,7 +1,5 @@
 import styled from "styled-components"
-import section3 from "../../../../assests/illustrations/section3.svg"
 import section2 from "../../../../assests/illustrations/section2.svg"
-import section1 from "../../../../assests/illustrations/hero.svg"
 
 export const Wrapper = styled.div`
   background-image: linear-gradient(20deg, #faf4d0, #f9b248), url(${section2});

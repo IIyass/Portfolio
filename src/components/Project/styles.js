@@ -16,7 +16,7 @@ export const ProjectLayout = styled.div`
   display: grid;
   grid-template-columns: 20% 20% 20%;
   grid-template-rows: auto auto auto;
-  row-gap: 20px;
+  row-gap: 4rem;
   justify-content: space-evenly;
 `
 
@@ -38,7 +38,7 @@ export const Card = styled.div`
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #dd6b20;
+    background-color: #f6ad55;
     transition: all 1s;
     backface-visibility: hidden;
     border-radius: 15px;
