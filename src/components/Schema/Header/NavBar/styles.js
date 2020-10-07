@@ -1,8 +1,7 @@
 import styled from "styled-components"
-import section2 from "../../../../assests/illustrations/section2.svg"
 
 export const Wrapper = styled.div`
-  background-image: linear-gradient(20deg, #faf4d0, #f9b248), url(${section2});
+  background-image: linear-gradient(20deg, #faf4d0, #f9b248);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -13,6 +12,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid #f6ad55;
   a {
     color: #000;
     text-decoration: none;
