@@ -26,7 +26,7 @@ export default () => (
       try {
         await axios({
           method: "POST",
-          url: `${process.env.PORTFOLIO_MAILER_CONTACT_ME_ENDPOINT}`,
+          url: `${process.env.GATSBY_PORTFOLIO_MAILER_CONTACT_ME_ENDPOINT.PORTFOLIO_MAILER_CONTACT_ME_ENDPOINT}`,
           headers: {
             "Content-Type": "application/json",
           },
