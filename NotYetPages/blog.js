@@ -20,7 +20,7 @@ const Blog = () => {
     <Layout>
       <SEO title="Project" />
       <h1>Projects</h1>
-      {console.log(data)}
+
       <ol>
         {data.allContentfulProject.edges.map(edge => {
           return (

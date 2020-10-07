@@ -16,7 +16,21 @@ module.exports = {
     "babel-plugin-styled-components",
     "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-modal-routing",
-
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: process.env.YOUR_FIREBASE_API_KEY,
+          authDomain: process.env.YOUR_FIREBASE_AUTH_DOMAIN,
+          databaseURL: process.env.YOUR_FIREBASE_DATABASE_URL,
+          projectId: process.env.YOUR_FIREBASE_PROJECT_ID,
+          storageBucket: process.env.YOUR_FIREBASE_STORAGE_BUCKET,
+          messagingSenderId: process.env.YOUR_FIREBASE_MESSAGING_SENDER_ID,
+          appId: process.env.YOUR_FIREBASE_APP_ID,
+          measurementId: process.env.MEASUREMENT_ID,
+        },
+      },
+    },
     {
       resolve: "gatsby-source-contentful",
       options: {

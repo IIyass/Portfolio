@@ -5,6 +5,7 @@ import { Input } from "../../UI/input"
 import { Textarea } from "../../UI/textarea"
 import { Button } from "../../UI/button"
 import { Error, InputField } from "./styles"
+import axios from "axios"
 
 export default () => (
   <Formik
@@ -22,11 +23,28 @@ export default () => (
       { fullname, email, object },
       { setSubmitting, resetForm, setFieldValue }
     ) => {
-      console.log({
-        fullname: fullname,
-        email: email,
-        object: object,
-      })
+      try {
+        await axios({
+          method: "POST",
+          url: `${process.env.PORTFOLIO_MAILER_CONTACT_ME_ENDPOINT}`,
+          headers: {
+            "Content-Type": "application/json",
+          },
+          data: JSON.stringify({
+            fullname,
+            email,
+            object,
+          }),
+        })
+        setSubmitting(false)
+        setFieldValue("success", true)
+        alert("I'll reach to you soon as i can, Thank you !")
+        setTimeout(() => resetForm(), 1000)
+      } catch (err) {
+        setSubmitting(false)
+        setFieldValue("success", false)
+        alert("Something went wrong, please try again!") // eslint-disable-line
+      }
     }}
   >
     {({ values, touched, errors, setFieldValue, isSubmitting }) => (

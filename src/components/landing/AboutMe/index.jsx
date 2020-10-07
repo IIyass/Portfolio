@@ -22,7 +22,7 @@ export const AboutMe = () => {
           add value to society through technology...
         </p>
         <Style.MoreInfo>
-          <Button as={Link} to="/aboutMe">
+          <Button as={Link} to="/aboutme">
             More
           </Button>
           <Button as={Link} href={Curriculum} download>
