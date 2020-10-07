@@ -2,7 +2,6 @@ import React from "react"
 import * as Style from "./styles"
 import { Button } from "../UI/button"
 import { Link } from "gatsby"
-import { ModalRoutingContext } from "gatsby-plugin-modal-routing"
 
 const ProjectCard = ({
   name,
