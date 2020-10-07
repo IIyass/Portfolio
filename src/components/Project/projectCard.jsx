@@ -3,12 +3,7 @@ import * as Style from "./styles"
 import { Button } from "../UI/button"
 import { Link } from "gatsby"
 
-const ProjectCard = ({
-  name,
-  url,
-  description,
-  topic = ["react.js", "node.js", "javascript"],
-}) => {
+const ProjectCard = ({ name, url, description, topics }) => {
   return (
     <Style.Card>
       <div className="Card">
@@ -21,19 +16,19 @@ const ProjectCard = ({
         </div>
         <div className="CardBack">
           <div className="BackButton">
-            <Button url={url}>GITHUB REPOSITORY</Button>
+            <Link to={url}>GITHUB REPOSITORY</Link>
             <Link
               to="/model"
               state={{
                 modal: true,
               }}
             >
-              Login
+              Live
             </Link>
           </div>
           <ul>
-            {topic.map(e => {
-              return <li>{e}</li>
+            {topics.map(e => {
+              return <li>{e.node.topic.name}</li>
             })}
           </ul>
         </div>

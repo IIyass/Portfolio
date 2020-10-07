@@ -19,6 +19,15 @@ const Project = () => {
                 name
                 url
                 description
+                repositoryTopics(first: 10) {
+                  edges {
+                    node {
+                      topic {
+                        name
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -26,6 +35,7 @@ const Project = () => {
       }
     }
   `)
+
   return (
     <Wrapper>
       <ProjectLayout as={Container}>
@@ -37,6 +47,7 @@ const Project = () => {
               url={project.node.url}
               description={project.node.description}
               url={project.node.url}
+              topics={project.node.repositoryTopics.edges}
             />
           )
         })}

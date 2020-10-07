@@ -57,16 +57,15 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
       li {
-        border-top: 1px solid rgba(#cbd5e0 0, 0.5);
-        border-bottom: 2px solid rgba(#cbd5e0 0, 0.5);
-        padding: 10px 0px;
+        padding: 5px 0px;
+        color: #fff;
       }
     }
   }
@@ -109,8 +108,12 @@ export const Card = styled.div`
   .BackButton {
     display: flex;
     flex-direction: column;
-    button {
+    a {
+      background-color: #f9a826;
       margin-bottom: 10px;
+      border-radius: 10px;
+      color: #fff;
+      padding: 10px;
     }
   }
 
