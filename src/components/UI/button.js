@@ -8,4 +8,5 @@ export const Button = styled.button`
   width: 120px;
   height: 40px;
   font-family: Ubuntu;
+  cursor: pointer;
 `

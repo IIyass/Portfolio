@@ -9,6 +9,8 @@ export const Error = styled.div`
 export const InputField = styled.div`
   position: relative;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 `
 
 export const ContactWrapper = styled.div`

@@ -45,6 +45,7 @@ export const Global = createGlobalStyle`
   body{
     font-family: 'Lato';
     margin:0;
+   
     a {
       text-align: center;
       text-decoration: none;

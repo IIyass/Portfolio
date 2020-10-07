@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 export const Input = styled.input.attrs(props => ({
   type: props.type,
-  size: 10,
 }))`
  
     width: 100%;
+    font-size: 15px;
     width: -moz-available;
     width: -webkit-fill-available;
     padding: 8px;
