@@ -1,5 +1,6 @@
 import React from "react"
 import { Formik, Form, FastField, ErrorMessage } from "formik"
+import { Link } from "gatsby"
 import * as Yup from "yup"
 import { Input } from "../../UI/input"
 import { Textarea } from "../../UI/textarea"
@@ -38,7 +39,6 @@ export default () => (
         })
         setSubmitting(false)
         setFieldValue("success", true)
-        alert("I'll reach to you soon as i can, Thank you !")
         setTimeout(() => resetForm(), 1000)
       } catch (err) {
         setSubmitting(false)

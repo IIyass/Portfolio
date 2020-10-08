@@ -1,7 +1,7 @@
 import React from "react"
 import * as Style from "./styles"
-import { Button } from "../UI/button"
 import { Link } from "gatsby"
+import image from "../../assests/illustrations/live.svg"
 
 const ProjectCard = ({ name, url, description, topics }) => {
   return (
@@ -21,6 +21,8 @@ const ProjectCard = ({ name, url, description, topics }) => {
               to="/model"
               state={{
                 modal: true,
+                message: "Sorry this app isn't deployed yet !",
+                picture: image,
               }}
             >
               Live

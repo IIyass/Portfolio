@@ -26,20 +26,22 @@ export const Global = createGlobalStyle`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 
-    .ReactModal__Content {
+    .ReactModal__Content.ReactModal__Content--after-open {
+      width:40%;
+      height:55%;
+     
          position:absolute;
-         left:50%;
-         top:50%;
-         transform:transition(-50%,-50%);
+         left:50% !important;
+         top:50% !important;
+         transform:translate(-50%,-50%) !important;
+         padding:10px !important;
         background: #000;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        border-radius: 10px;
-        width: 50%;
-        max-width: 800px;
+        border-radius: 15px;
         animation: ${ModalFadeInKeyframes} 250ms linear;
-        overflow-x: auto;
-        max-height: 90%;
-      }
+        overflow: hidden;
+      
+
   }
 
   body{
@@ -71,7 +73,10 @@ export const Global = createGlobalStyle`
       line-height: 1.3;
       color: #707070;
     }
-
+  
+  
   }
+
+}
  
 `

@@ -1,12 +1,13 @@
 import React from "react"
-import LiveModel from "../components/Utils/Modal"
+import ModelComponent from "../components/Utils/Modal/Modal"
 import { Global } from "../components/layout/styles"
+const Model = props => {
+  const { message, picture } = props.location.state
 
-const Model = () => {
   return (
     <>
       <Global />
-      <LiveModel />
+      <ModelComponent message={message} picture={picture} />
     </>
   )
 }

@@ -10,7 +10,7 @@ const Project = () => {
       github {
         viewer {
           repositories(
-            first: 8
+            first: 20
             orderBy: { field: STARGAZERS, direction: DESC }
           ) {
             edges {
@@ -41,14 +41,16 @@ const Project = () => {
       <ProjectLayout as={Container}>
         {data.github.viewer.repositories.edges.map(project => {
           return (
-            <ProjectCard
-              id={project.node.id}
-              name={project.node.name}
-              url={project.node.url}
-              description={project.node.description}
-              url={project.node.url}
-              topics={project.node.repositoryTopics.edges}
-            />
+            project.node.description && (
+              <ProjectCard
+                id={project.node.id}
+                name={project.node.name}
+                url={project.node.url}
+                description={project.node.description}
+                url={project.node.url}
+                topics={project.node.repositoryTopics.edges}
+              />
+            )
           )
         })}
       </ProjectLayout>
