@@ -13,17 +13,17 @@ const Icons = () => {
     <Style.Icons>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/company/finamaze/">
+          <a href="https://www.linkedin.com">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/company/finamaze/">
+          <a href="https://www.linkedin.com">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/company/finamaze/">
+          <a href="https://www.linkedin.com">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
