@@ -2,13 +2,13 @@ import React from "react"
 import * as Style from "./styles"
 import { Container } from "../common"
 import { Link, graphql, useStaticQuery } from "gatsby"
-
-
+import image from '../../assests/illustrations/Blog.svg'
+import BlogCard from './BolgCard'
 
 
 
 const Blogs = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       allContentfulProject(sort: { fields: date, order: DESC }) {
         edges {
@@ -24,20 +24,17 @@ const Blogs = () => {
   return (
     <Style.Wrapper>
       <Style.Container as={Container}>
-      <ol>
-        {data.allContentfulProject.edges.map(edge => {
-          return (
-            <li>
-              <h2>
-                <Link to={`/project/${edge.node.slug}`}>{edge.node.title}</Link>
-              </h2>
-              <p>{edge.node.date}</p>
-            </li>
-          )
-        })}
-      </ol>
+        <Style.BlogLayout>
+          {data.allContentfulProject.edges.map(edge => {
+            return (
+              <Link to={`/project/${edge.node.slug}`}>
+                <BlogCard title={edge.node.title} Details={edge.node.date} image={image} />
+              </Link>
+            )
+          })}
+        </Style.BlogLayout>
       </Style.Container>
-    </Style.Wrapper>
+    </Style.Wrapper >
   )
 }
 export default Blogs
