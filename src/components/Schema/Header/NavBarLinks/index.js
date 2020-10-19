@@ -43,7 +43,7 @@ const NavBarLinks = ({ path, LandingPage }) => {
           <Link href="/">Home</Link>
         </li>
           <li>
-            <Link href="#contactMe">Blog</Link>
+            <Link href="/blog">Blog</Link>
           </li>
           <li>
             <Link href="/">contactMe</Link>
