@@ -14,11 +14,9 @@ const NavBarLinks = ({ path, LandingPage }) => {
     switch (path) {
       case "/":
         return Setselected(1)
-      case "/abouteMe":
-        return Setselected(2)
       case "/blog":
-        return Setselected(3)
-      case "/contactUs":
+        return Setselected(2)
+      case "/aboutme":
         return Setselected(4)
       case "/project":
         return Setselected(5)
@@ -45,13 +43,13 @@ const NavBarLinks = ({ path, LandingPage }) => {
           <Link href="/">Home</Link>
         </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="#contactMe">Blog</Link>
           </li>
           <li>
             <Link href="/">contactMe</Link>
           </li>
           <li>
-            <Link href="/aboutMe">aboutMe</Link>
+            <Link href="/aboutme">aboutMe</Link>
           </li>
           <li>
             <Link href="/project">Projects</Link>

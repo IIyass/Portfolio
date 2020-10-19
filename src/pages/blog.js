@@ -2,9 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import Blogs from "../components/Blog"
 
-const Blog = () => {
+const Blog = (props) => {
   return (
-    <Layout>
+    <Layout path={props.location.pathname}>
       <Blogs />
     </Layout>
   )

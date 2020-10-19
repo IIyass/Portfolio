@@ -5,10 +5,10 @@ import { Project } from "./Projects"
 import { AboutMe } from "./AboutMe"
 import { Blogs } from "./Blogs"
 import { Wrapper } from "./styles"
-const Landing = ({ path }) => {
+const Landing = () => {
   return (
     <Wrapper>
-      <Hero path={path} />
+      <Hero />
       <AboutMe />
       <Project />
       <Blogs />

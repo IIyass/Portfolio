@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 const Home = props => {
   return (
-    <Layout LandingPage={true} >
+    <Layout path={props.location.pathname} LandingPage={true} >
       <Landing path={props.location.pathname} />
     </Layout>
   )
