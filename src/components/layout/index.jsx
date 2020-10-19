@@ -3,11 +3,11 @@ import Footer from "../Schema/Footer"
 import Header from "../Schema/Header/NavBar"
 import { Global, Wrapper } from "./styles"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, LandingPage }) => {
   return (
     <>
       <Global />
-      <Header />
+      <Header LandingPage={LandingPage} />
       {children}
       <Footer />
     </>

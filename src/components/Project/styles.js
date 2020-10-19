@@ -63,8 +63,11 @@ export const Card = styled.div`
       list-style: none;
       margin: 0;
       padding: 0;
+      display:flex;
+      flex-wrap:wrap;
       li {
         padding: 5px 0px;
+        margin:5px;
         color: #fff;
       }
     }
